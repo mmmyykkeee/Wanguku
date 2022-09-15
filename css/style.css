@@ -2034,6 +2034,18 @@ pre code {
 }
 
 @media (max-width: 991.98px) {
+ .rows{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+    height: 50vh;
+  }
+
+
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -8072,6 +8084,7 @@ button.bg-dark:focus {
 .py-5 {
   padding-bottom: 3rem !important;
 }
+
 
 .pl-5,
 .px-5 {
