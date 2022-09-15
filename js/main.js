@@ -17,6 +17,25 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
+
+
+    let counter = document.querySelectorAll(".counter");
+let a = Array.from(counter);
+a.map((items)=>{
+    let count = items.innerHTML;
+    items.innerHTML = "";
+    let countNumber = 0;
+
+    function counterUP(){
+        items.innerHTML = countNumber++;
+        if(countNumber > count){
+            clearInterval(stop);
+    }
+}
+    let stop = setInterval(()=>{
+        counterUP();
+    }, items.dataset.speed/count);
+});
     
     
     // Back to top button
