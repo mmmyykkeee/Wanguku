@@ -2034,7 +2034,7 @@ pre code {
 }
 
 @media (max-width: 991.98px) {
- .rows{
+ /* .rows{
   display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0fr 1fr 1fr 1fr;
@@ -2043,7 +2043,7 @@ pre code {
     justify-items: stretch;
     align-items: stretch;
     height: 50vh;
-  }
+  } */
 
 
   .table-responsive-lg {
