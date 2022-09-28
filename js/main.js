@@ -61,8 +61,15 @@ const swiper = new Swiper(".blog-slider", {
 
 
      
- 
-    
+const divHide = document.getElementById("div-hide");
+
+function handleHide() {
+  divHide.style.display = "none";
+}
+
+function handleShow() {
+  divHide.style.display = "block";
+}
     
     
 

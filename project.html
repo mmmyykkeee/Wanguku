@@ -79,9 +79,10 @@
 
 
     <!-- Portfolio Start -->
-    <div class="container-fluid py-5">
+    <div class=" container-fluid py-5">
+      
         <div class="container pt-5 pb-3">
-            <h1 class="display-4 text-uppercase text-center mb-5">View our Items</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5" style="position: relative;">View our Items</h1>
             <!-- <div class="row">
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
@@ -116,14 +117,14 @@
                     </ul>
                 </div>
             </div> -->
-            <div class="row portfolio-container">
+            <div class="dflex row portfolio-container">
                 <div class=" mb-4 portfolio-item" >
-                    <div class="position-relative rounded overflow-hidden mb-2">
+                    <div class=" position-relative rounded overflow-hidden mb-2">
 <figure class="snip1234 second">
   <img src="img/concretemixer.jpg" alt="sample2"/>
   <figcaption>
     <h3>Concrete Mixer</h3>
-    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, assumenda ullam eveniet magni fugiat aliquid optio veniam quis, sit enim architecto cupiditate praesentium at ipsam consectetur molestias! Ipsum, nostrum eius.
+    <p> Loremme, ipsum dolor sit amet consectetur adipisicing elit. Sint, assumenda ullam eveniet magni fugiat aliquid optio veniam quis, sit enim architecto cupiditate praesentium at ipsam consectetur molestias! Ipsum, nostrum eius.
 </p>
     <a href="#" class="read-more">Read More</a>
   </figcaption>
@@ -184,6 +185,9 @@
     </figcaption>
     
   </figure>
+
+<div id="div-hide">
+
   <figure class="snip1234">
  
     <img src="img/combinedposhomill.jpg" alt="sample2"/>
@@ -351,6 +355,19 @@
   </figure>
 
 </div>
+
+
+
+
+</div>
+ 
+    <button onclick="handleShow()">
+    Shore More
+    </button>
+    <button onclick="handleHide()">
+    Show Less
+    </button>
+</div>
 </div>
             </div>
         </div>
@@ -440,6 +457,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>const divHide = document.getElementById("div-hide");
+
+function handleHide(){
+    divHide.style.display = "none";
+}
+
+function handleShow(){
+    divHide.style.display = "block";
+}</script>
 </body>
 
 </html>
+
+
