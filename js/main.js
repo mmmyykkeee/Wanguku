@@ -19,6 +19,56 @@
     });
 
 
+const swiper = new Swiper(".blog-slider", {
+  spaceBetween: 30,
+  effect: "fade",
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  // autoHeight: true,
+  pagination: {
+    el: ".blog-slider__pagination",
+    clickable: true,
+  },
+});
+
+
+    
+
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach((counter) => {
+      counter.innerText = "0";
+
+      const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const c = +counter.innerText;
+
+        const increment = target / 200;
+
+        if (c < target) {
+          counter.innerText = `${Math.ceil(c + increment)}`;
+          setTimeout(updateCounter, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    });
+
+
+
+     
+ 
+    
+    
+    
+
+
+
+
     let counter = document.querySelectorAll(".counter");
 let a = Array.from(counter);
 a.map((items)=>{
