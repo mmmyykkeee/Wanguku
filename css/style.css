@@ -10053,11 +10053,11 @@ h6,
   height: 0;
   top: 50%;
   left: 50%;
-  background: rgba(34, 36, 41, 0.5);
+  background: #333;
   border: 1px solid transparent;
   border-radius: 4px;
   opacity: 0;
-  transition: .5s;
+  transition: .3s;
 }
 
 .portfolio-item:hover .portfolio-btn {
@@ -10068,6 +10068,7 @@ h6,
   left: 0;
   border-radius: 1px;
   border: 1px solid rgba(34, 36, 41, 0.9);
+  background-image: url(/img/blop.gif);
 }
 
 .portfolio-item i {
