@@ -6721,8 +6721,7 @@ button.bg-dark:focus {
   background-color: #0b0c0d !important;
 }
 
-.bg-white {
-  background-color: #fff !important;
+.bg-whites {
   width: fit-content !important;
   margin: auto !important;
   height: fit-content !important;
