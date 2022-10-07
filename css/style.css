@@ -79,6 +79,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: grey; 
+  padding: 45px; 
+  border-radius: 5px
 }
 
 .counter-container {
@@ -89,18 +92,45 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   justify-content: center;
   text-align: center;
   margin: 30px 50px;
+  color: #fff;
 }
 
 .counter {
   font-size: 60px;
   margin-top: 10px;
+  
 }
+
+
 
 @media (max-width: 580px) {
   .counter--container {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+
+
+
+
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
 }
 
 
@@ -6693,6 +6723,9 @@ button.bg-dark:focus {
 
 .bg-white {
   background-color: #fff !important;
+  width: fit-content !important;
+  margin: auto !important;
+  height: fit-content !important;
 }
 
 .bg-transparent {

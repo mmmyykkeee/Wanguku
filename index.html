@@ -10,6 +10,7 @@
 
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./dist/output.css">
 <script src="https://unpkg.com/swiper@8.3.2/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/swiper@8.3.2/swiper-bundle.min.css" rel="stylesheet"/>
 
@@ -829,46 +830,100 @@ The Dressing of stones is important so, that they are dressed into suitable shap
             <div class="col-12 px-0" style="height: 500px;">
                 <div class="position-relative h-100">
                     <iframe class="position-relative w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0413871158494!2d36.762670415033185!3d-1.1307327357958812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f2452aba42677%3A0x6d74b3473c5d4bf3!2sKiambu%20Rd!5e0!3m2!1sen!2ske!4v1662758696689!5m2!1sen!2ske"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7978.170920234829!2d37.02639226357602!3d-1.0981920465294248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1665161675479!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
-
-                       
-
-                </div>
+</div>
             </div>
         </div>
         <div class="row mx-0 justify-content-center" style="margin-top: -200px;">
             <div class="col-lg-6 col-md-8 col-sm-10 px-0">
                 <div class="contact-form bg-white rounded p-5">
                     <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <div class="control-group">
-                                    <input type="text" class="form-control bg-light border-0 p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="control-group">
-                                    <input type="email" class="form-control bg-light border-0 p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control bg-light border-0 p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control bg-light border-0 py-3 px-4" rows="5" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary text-uppercase py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
-                        </div>
-                    </form>
+
+
+
+<div class="flex ">
+    <div class=" mx-auto">
+      <div class="max-w-full mx-xl-auto my-20 bg-white p-5 rounded-md shadow-2xl">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+            Contact Us
+          </h1>
+          <p class="text-gray-400 dark:text-gray-400">
+            Fill up the form below to send us a message.
+          </p>
+        </div>
+        <div class="m-7">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+            <input style="width:400px;" type="hidden" name="access_key" value="01bbe3f1-59cf-4ce5-ba26-cca0ee2e2531" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="flex mb-6 space-x-4">
+              <div class="w-full md:w-1/2">
+                <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First Name</label>
+                <input type="text" name="name" id="first_name" placeholder="First Name" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide your first name.
+                </div>
+                
+              </div>
+              
+              <div class="w-full md:w-1/2">
+                <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last Name</label>
+                <input  type="text" name="last_name" id="lname" placeholder="Second Name" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide your last name.
+                </div>
+                
+              </div>
+            </div>
+  
+            <div class="flex mb-6 space-x-4">
+              <div class="w-full md:w-1/2">
+                <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                <div class="empty-feedback text-red-400 text-sm mt-1">
+                  Please provide your email address.
+                </div>
+                <div class="invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide a valid email address.
+                </div>
+              </div>
+  
+              <div class="w-full md:w-1/2">
+                <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone Number</label>
+                <input  type="text" name="phone" id="phone" placeholder="+254 712 345 678" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+  
+                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide your phone number.
+                </div>
+              </div>
+            </div>
+           
+            <div class="mb-6">
+              <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+  
+              <textarea rows="3" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please enter your message.
+              </div>
+            </div>
+            <div class="mb-6">
+              <button type="submit" class="w-full px-3 py-4 text-white bg-stone-700 rounded-md focus:bg-stone-600 focus:outline-none">
+                Send Message
+              </button>
+            </div>
+            <p class="text-base text-center text-gray-400" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+                   
                 </div>
             </div>
         </div>
