@@ -885,7 +885,7 @@ The Dressing of stones is important so, that they are dressed into suitable shap
                 <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
                 <input type="email" name="email" id="email" placeholder="example@email.com" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
                 <div class="empty-feedback text-red-400 text-sm mt-1">
-                  Please provide your email address.
+                 
                 </div>
                 <div class="invalid-feedback text-red-400 text-sm mt-1">
                   Please provide a valid email address.
@@ -965,17 +965,22 @@ The Dressing of stones is important so, that they are dressed into suitable shap
                     <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right text-white mr-2"></i>Contact Us</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-uppercase text-white mb-4">Newsletter</h4>
-                <p class="mb-4">Subscribe to out Weekly Newletter to stay ahead on new products and price reductions on our products.</p>
+                <p class="mb-4">Subscribe to out Weekly Newsletter to stay ahead on new products and price reductions on our products.</p>
+                 <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+            <input style="width:400px;" type="hidden" name="access_key" value="01bbe3f1-59cf-4ce5-ba26-cca0ee2e2531" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
                 <div class="w-100 mb-3">
                     <div class="input-group">
                         <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
                         <div class="input-group-append">
-                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
+                            <button type="submit" class="btn btn-primary text-uppercase px-3">Sign Up</button>
                         </div>
                     </div>
                 </div>
+                 </form>
                 <i>Thank you for Subscribing</i>
             </div>
         </div>
@@ -1005,8 +1010,8 @@ The Dressing of stones is important so, that they are dressed into suitable shap
 
     <!-- Contact Javascript File -->
   
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    
+    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

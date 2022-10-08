@@ -13,31 +13,30 @@
   }
   
 
-.slidesshow-container{
-  width: 48vw;
-  height: 80vh;
- 
-}
+
 .fa{
 	color: #fff;
 }
 
 
   .myslidess {
-    height: 500px; 
-    width:  500px;
+    height: inherit; 
+    width:  inherit;
     padding: 1rem 1rem;
     background-color: transparent;
     margin-right: 0px ;
     overflow: hidden;
     position: inherit;
+	
+
     
  }
 
- .myslidess img{
-	width: 100%;
+  .myslidess img{
+	width: inherit;
+	height: inherit;
 	
- }
+ } 
   /* .myslidess.one{
     margin-left: -7em;
     overflow: visible;
@@ -55,11 +54,19 @@
  .hh:hover{
   display: block;
 }
+.carousels{
+	height: 70vh;
+  
+    }
+
 
   .slidesshow-container {
+	
     background: transparent;
     position: relative;
     margin: 0 auto;
+	 width: 48vw;
+  	height: inherit;
   }
   .carousels .prev,
   .carousels .next{
