@@ -10556,6 +10556,12 @@ h6,
   transition: 0.5s;
 }
 
+ .display-5{
+ 
+  width: 180px !important;
+  height: 100px !important;
+}
+
 .team-carousel .owl-nav .owl-prev:hover,
 .team-carousel .owl-nav .owl-next:hover {
   color: #aaa;
